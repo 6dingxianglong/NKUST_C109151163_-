@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_autobiography/page/turtle.dart';
 
 import 'menu.dart';
 
@@ -20,12 +21,57 @@ class _page1State extends State<page1> {
             'Self Intro',
           style: TextStyle(fontWeight: FontWeight.bold),),
         centerTitle: true,
-        backgroundColor: const Color(0xffEBB471),
+        backgroundColor: const Color(0xff12CBC4),
 
         ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            Container(
+              color: Colors.black12,
+              child: Column(
+                children: [
+                  const Padding(padding: EdgeInsets.fromLTRB(0, 30, 220, 20),
+                    child: Text("基本資料",
+                      style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
+                    ,),
+                  Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.fromLTRB(30, 0, 30, 50),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children:  [
+                            const Text("姓名：丁襄龍,\n英文姓名：Clove Dragon\n生日：12/06",
+                              style: TextStyle(fontSize: 15), ),
+                            Container(
+                              margin: EdgeInsets.only(top: 0),
+                              child:Row(
+                                children: [
+                                  const Text("興趣",
+                                    style: TextStyle(fontSize: 15), ),
+                                  TextButton(
+                                      child: const Text("養烏龜", style: TextStyle(fontSize: 15), ),
+                                      onPressed:() {
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (context) => turtle()));
+                                      }),
+                                ],) ,
+                            ),],
+                        ),
+                      ),
+                      Container(
+                        color: Colors.redAccent,
+                        child: Image.asset('asset/img1.jpg'),
+                        height: 130,
+                        width: 130,
+                        margin: EdgeInsets.only(bottom: 10),
+                      ),],
+                  ),],
+              ),
+            ),
+
             const Padding(padding: EdgeInsets.fromLTRB(0, 30, 220, 20),
               child: Text("Who am  I",
                 style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
@@ -47,52 +93,9 @@ class _page1State extends State<page1> {
                   "在前十，希望可以推甄上中字輩研究所。",style: TextStyle(fontSize: 20),),
             ),
 
-            Container(
-              color: Colors.redAccent,
-              child: Image.asset('asset/img1.jpg'),
-              height: 236,
-              width: 236,
-            ),
+
             SizedBox(height: 30,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                    width: 150,
-                    height: 150,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        width: 2,
-                        color: Colors.purple,
-                        style: BorderStyle.solid,
-                      ),
-                      borderRadius: BorderRadius.circular(30),
-                      image: DecorationImage(
-                        image: AssetImage('asset/img1.jpg'),
-                        fit:BoxFit.cover ,
-                      ) ,
-                    )
-                ),
-                Container(
-                    width: 150,
-                    height: 150,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        width: 2,
-                        color: Colors.purple,
-                        style: BorderStyle.solid,
-                      ),
-                      borderRadius: BorderRadius.circular(30),
-                      image: DecorationImage(
-                        image: AssetImage('asset/img1.jpg'),
-                        fit:BoxFit.cover ,
-                      ) ,
-                    )
-                ),
-              ],
-            ),
+
           ],
         ),
       ),

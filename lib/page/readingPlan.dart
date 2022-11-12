@@ -13,7 +13,7 @@ class _page4State extends State<page4> {
       appBar: AppBar(
         title: Text('Reading Plan'),
         centerTitle: true,
-        backgroundColor: const Color(0xffEBB471),
+        backgroundColor: const Color(0xff12CBC4),
       ),
     );
   }

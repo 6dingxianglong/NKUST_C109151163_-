@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
         body: tabs[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          backgroundColor: const Color(0xffEBB471),
+          backgroundColor: const Color(0xff12CBC4),
           selectedItemColor: Colors.white,
           selectedFontSize: 15,
           unselectedFontSize: 10,

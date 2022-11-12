@@ -17,7 +17,7 @@ class _page3State extends State<page3> {
           'project',
           style: TextStyle(fontWeight: FontWeight.bold),),
         centerTitle: true,
-        backgroundColor: const Color(0xffEBB471),
+        backgroundColor: const Color(0xff12CBC4),
 
       ),
 
