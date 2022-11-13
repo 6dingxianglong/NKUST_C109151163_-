@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_autobiography/page/turtle.dart';
 
-import 'menu.dart';
 
 class page1 extends StatefulWidget {
   const page1({Key? key}) : super(key: key);
@@ -52,7 +51,7 @@ class _page1State extends State<page1> {
                                   const Text("興趣",
                                     style: TextStyle(fontSize: 15), ),
                                   TextButton(
-                                      child: const Text("養烏龜", style: TextStyle(fontSize: 15), ),
+                                      child: const Text("養烏龜(按我)", style: TextStyle(fontSize: 15), ),
                                       onPressed:() {
                                         Navigator.push(context,
                                             MaterialPageRoute(builder: (context) => turtle()));
@@ -67,7 +66,8 @@ class _page1State extends State<page1> {
                         height: 130,
                         width: 130,
                         margin: EdgeInsets.only(bottom: 10),
-                      ),],
+                      ),
+                    ],
                   ),],
               ),
             ),
