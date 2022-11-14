@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_autobiography">
+    package="com.example.nkust_C109151163_DingXiangLong_midterm">
    <application
-        android:label="flutter_autobiography"
+        android:label="nkust_C109151163_DingXiangLong_midterm"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

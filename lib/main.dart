@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter_autobiography/page/Expertise.dart';
-import 'package:flutter_autobiography/page/project.dart';
-import 'package:flutter_autobiography/page/readingPlan.dart';
-import 'package:flutter_autobiography/page/self_intro.dart';
+import 'package:nkust_C109151163_DingXiangLong_midterm/page/Expertise.dart';
+import 'package:nkust_C109151163_DingXiangLong_midterm/page/project.dart';
+import 'package:nkust_C109151163_DingXiangLong_midterm/page/readingPlan.dart';
+import 'package:nkust_C109151163_DingXiangLong_midterm/page/self_intro.dart';
 
 final player=AudioPlayer();
 

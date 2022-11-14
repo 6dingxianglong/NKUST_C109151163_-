@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_autobiography/data.dart';
+import 'package:nkust_C109151163_DingXiangLong_midterm/data.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class page2 extends StatefulWidget {
