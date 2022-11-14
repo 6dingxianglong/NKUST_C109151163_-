@@ -6,6 +6,7 @@ import 'package:flutter_autobiography/page/project.dart';
 import 'package:flutter_autobiography/page/readingPlan.dart';
 import 'package:flutter_autobiography/page/self_intro.dart';
 
+final player=AudioPlayer();
 
 void main() {
   runApp( MyApp());
@@ -33,7 +34,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
 
     final player=AudioPlayer();
-    player.play(AssetSource("asset/mp3,mp3"));
+    player.play(AssetSource("asset/Flower Dance,mp3"));
+
     return MaterialApp(
       home: Scaffold(
         body: tabs[_currentIndex],
@@ -50,7 +52,6 @@ class _MyAppState extends State<MyApp> {
             BottomNavigationBarItem(icon: Icon(Icons.psychology),label: "Expertise"),
             BottomNavigationBarItem(icon: Icon(Icons.poll),label: "Project"),
             BottomNavigationBarItem(icon: Icon(Icons.school),label: "reading_plain"),
-
           ],
           onTap:_onItemClick,
 
