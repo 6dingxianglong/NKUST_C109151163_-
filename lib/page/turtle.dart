@@ -38,6 +38,7 @@ class _turtleState extends State<turtle> {
       }
     });
   }
+
   deactivate(){
     print("deactivate()");
     status=1;
@@ -45,7 +46,12 @@ class _turtleState extends State<turtle> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(
+        onWillPop: () async {
+          showAlertDialog(context);
+      return true;
+    },
+    child: Scaffold(
       appBar: AppBar(
         title: Text("寵物"),
         backgroundColor: Colors.green,
@@ -68,34 +74,34 @@ class _turtleState extends State<turtle> {
           )
         ],
       ),
-        body: Container(
-          color: Color(0xfffad390),
-          child:Column(
-            children: [
-              Container(
-                height: 450,
-                child: Column(
-                  children: [
-                    if(count<5 &&status==0)
-                      Container(
-                        margin: EdgeInsets.only(top: 165),
-                        child: Center(
+      body: Container(
+        color: Color(0xfffad390),
+        child:Column(
+          children: [
+            Container(
+              height: 450,
+              child: Column(
+                children: [
+                  if(count<5 &&status==0)
+                    Container(
+                      margin: EdgeInsets.only(top: 165),
+                      child: Center(
                           child:
-                              Column(
-                                children: [
-                                  Text("龜龜",
-                                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                                  Image.asset('asset/turtle/turtle1.png'),
-                                  Text("飽足感：$count /5"),
-                                  Text("幸福感：$love /10")
-                                ],
-                              )
-                        ),
+                          Column(
+                            children: [
+                              Text("龜龜",
+                                style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                              Image.asset('asset/turtle/turtle1.png'),
+                              Text("飽足感：$count /5"),
+                              Text("幸福感：$love /10")
+                            ],
+                          )
                       ),
-                    if(5<=count && count<10&&status==0)
-                      Container(
-                        margin: EdgeInsets.only(top: 160),
-                        child: Center(
+                    ),
+                  if(5<=count && count<10&&status==0)
+                    Container(
+                      margin: EdgeInsets.only(top: 160),
+                      child: Center(
                           child:
                           Column(
                             children: [
@@ -105,12 +111,12 @@ class _turtleState extends State<turtle> {
                               Text("幸福感：$love /10")
                             ],
                           )
-                        ),
                       ),
-                    if(10<=count &&count<20&&status==0)
-                      Container(
-                        margin: EdgeInsets.only(top: 150),
-                        child: Center(
+                    ),
+                  if(10<=count &&count<20&&status==0)
+                    Container(
+                      margin: EdgeInsets.only(top: 150),
+                      child: Center(
                           child:
                           Column(
                             children: [
@@ -120,12 +126,12 @@ class _turtleState extends State<turtle> {
                               Text("幸福感：$love /10")
                             ],
                           )
-                        ),
                       ),
-                    if(20<=count && count<35&&status==0)
-                      Container(
-                        margin: EdgeInsets.only(top: 100),
-                        child: Center(
+                    ),
+                  if(20<=count && count<35&&status==0)
+                    Container(
+                      margin: EdgeInsets.only(top: 100),
+                      child: Center(
                           child:
                           Column(
                             children: [
@@ -135,12 +141,12 @@ class _turtleState extends State<turtle> {
                               Text("幸福感：$love /10")
                             ],
                           )
-                        ),
                       ),
-                    if(35<=count&&status==0)
-                      Container(
-                        margin: EdgeInsets.only(top: 60),
-                        child: Center(
+                    ),
+                  if(35<=count&&status==0)
+                    Container(
+                      margin: EdgeInsets.only(top: 60),
+                      child: Center(
                           child:
                           Column(
                             children: [
@@ -150,27 +156,27 @@ class _turtleState extends State<turtle> {
                               Text("")
                             ],
                           )
-                        ),
                       ),
+                    ),
 
-                    if(status==1)
-                      Container(
-                        margin: EdgeInsets.only(bottom: 20),
+                  if(status==1)
+                    Container(
+                      margin: EdgeInsets.only(bottom: 20),
 
-                        child: Center(
-                            child:
-                            Column(
-                              children: [
-                                Image.asset('asset/rip.png'),
-                                Text("2019~2020")
-                              ],
-                            )),
-                      ),
-                  ],
-                ),
+                      child: Center(
+                          child:
+                          Column(
+                            children: [
+                              Image.asset('asset/rip.png'),
+                              Text("2019~2020")
+                            ],
+                          )),
+                    ),
+                ],
               ),
-              
-              if(status!=1)
+            ),
+
+            if(status!=1)
               Row(
                 children: [
                   Container(
@@ -194,9 +200,10 @@ class _turtleState extends State<turtle> {
                         )),
                   ),],
               )
-            ],
-          ),
+          ],
         ),
+      ),
+    )
     );
   }
 }
