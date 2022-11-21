@@ -62,17 +62,23 @@ class _page4State extends State<page4> {
                     ),
                   ),
 
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 20),
-                    ),
-                    onPressed: (){
-                      show1=!show1;
-                      setState(() {});},
-                    child: const Text("大一(點我)", 
-                        style: TextStyle(fontSize: 20,
-                          color: Color(0xffe1b12c)
-                        )
+                  Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black54,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: (){
+                        show1=!show1;
+                        setState(() {});},
+                      child: const Text("大一(點我)",
+                          style: TextStyle(fontSize: 20,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ),
                   if(show1)
@@ -91,16 +97,23 @@ class _page4State extends State<page4> {
                       ),
                     ),
                   SizedBox(height: 20,),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    onPressed: (){
-                      show2=!show2;
-                      setState(() {});},
-                    child: const Text("大二(點我)",
-                        style: TextStyle(fontSize: 20,
-                            color: Color(0xffe1b12c))
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: (){
+                        show2=!show2;
+                        setState(() {});},
+                      child: const Text("大二(點我)",
+                          style: TextStyle(fontSize: 20,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ),
 
@@ -121,18 +134,23 @@ class _page4State extends State<page4> {
                     ),
 
                   SizedBox(height: 20,),
-
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    onPressed: (){
-                      show3=!show3;
-                      setState(() {});},
-                    child: const Text("大三(點我)",
-                        style: TextStyle(fontSize: 20,
-                            color: Color(0xffe1b12c)
-                        )
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: (){
+                        show3=!show3;
+                        setState(() {});},
+                      child: const Text("大三(點我)",
+                          style: TextStyle(fontSize: 20,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ),
                   if(show3)
@@ -153,17 +171,23 @@ class _page4State extends State<page4> {
                     ),
 
                   SizedBox(height: 20,),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    onPressed: (){
-                      show4=!show4;
-                      setState(() {});},
-                    child: const Text("大四(點我)",
-                        style: TextStyle(fontSize: 20,
-                            color: Color(0xffe1b12c)
-                        )
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: (){
+                        show4=!show4;
+                        setState(() {});},
+                      child: const Text("大四(點我)",
+                          style: TextStyle(fontSize: 20,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ),
                   if(show4)
@@ -182,17 +206,23 @@ class _page4State extends State<page4> {
                     ),
 
                   SizedBox(height: 20,),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      textStyle: const TextStyle(fontSize: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black54,
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    onPressed: (){
-                      show5=!show5;
-                      setState(() {});},
-                    child: const Text("畢業後(點我)",
-                        style: TextStyle(fontSize: 20,
-                            color: Color(0xffe1b12c)
-                        )
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: (){
+                        show5=!show5;
+                        setState(() {});},
+                      child: const Text("畢業後(點我)",
+                          style: TextStyle(fontSize: 20,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ),
                   if(show5)Container(
