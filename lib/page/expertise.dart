@@ -26,22 +26,44 @@ class _page2State extends State<page2> {
 
       ),
       body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("asset/bg1.jpeg"),
+              fit: BoxFit.cover,
+            )
+        ),
         child: Column(
               children: [
                 const SizedBox(height: 20,),
-                const Center(
-                  child: Text("涉獵的技術清單",
-                    style: TextStyle(fontSize: 20), ),
-                ),
+                 Container(
+                   margin: EdgeInsets.only(left: 80,right: 80),
+                   height: 40,
+                   alignment: Alignment.center,
+                   decoration: BoxDecoration(
+                       color: Colors.black54,
+                     borderRadius: BorderRadius.circular(20),
+                     boxShadow: [
+                       BoxShadow(
+                         color: Colors.grey.withOpacity(0.9),
+                         offset: Offset(0.0,6.0),
+                         blurRadius: 0,
+                         spreadRadius: 0,
+                       )
+                     ]
+
+                   ),
+                   child:  Text("涉獵的技術清單",
+                     style: TextStyle(fontSize: 20,
+                       color: Colors.white
+                  ),
+                  ),
+                 ),
                 const SizedBox(height: 15,),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("Program：",
-                      style: TextStyle(fontSize: 15,
-                          fontWeight: FontWeight.bold),
-                    ),
+                    SizedBox(height: 20,),
                     Wrap(
                         spacing: 8.0, // 主轴(水平)方向间距
                         runSpacing: 4.0, // 纵轴（垂直）方向间距
@@ -82,10 +104,7 @@ class _page2State extends State<page2> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("skill：",
-                      style: TextStyle(fontSize: 15,
-                          fontWeight: FontWeight.bold),
-                    ),
+
                     Wrap(
                         spacing: 8.0, // 主轴(水平)方向间距
                         runSpacing: 4.0, // 纵轴（垂直）方向间距

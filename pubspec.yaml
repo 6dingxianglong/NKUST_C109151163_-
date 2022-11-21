@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   audioplayers: ^1.1.1
   fluttertoast: ^8.1.1
+  snippet_coder_utils: ^1.0.12
 
 
 dev_dependencies:

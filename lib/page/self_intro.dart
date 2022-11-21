@@ -74,8 +74,8 @@ class _page1State extends State<page1> {
 
             const Padding(padding: EdgeInsets.fromLTRB(0, 30, 220, 20),
               child: Text("Who am  I",
-                style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),)
-              ,),
+                style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
+            ),
             Container(
               padding: EdgeInsets.all(20),
               margin: EdgeInsets.fromLTRB(30, 0, 30, 50),
@@ -92,9 +92,6 @@ class _page1State extends State<page1> {
                   "流行，也在高職時期有接觸過程式碼，對其感到興趣，一年級被物理成績搞稿了，但隨後幾次排名都"
                   "在前十，希望可以推甄上中字輩研究所。",style: TextStyle(fontSize: 20),),
             ),
-
-
-            SizedBox(height: 30,),
 
           ],
         ),
