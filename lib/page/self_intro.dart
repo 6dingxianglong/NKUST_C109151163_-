@@ -51,7 +51,7 @@ class _page1State extends State<page1> {
                                   const Text("興趣",
                                     style: TextStyle(fontSize: 15), ),
                                   TextButton(
-                                      child: const Text("養烏龜(按我)", style: TextStyle(fontSize: 15), ),
+                                      child: const Text("養烏龜(點我)", style: TextStyle(fontSize: 20), ),
                                       onPressed:() {
                                         Navigator.push(context,
                                             MaterialPageRoute(builder: (context) => turtle()));

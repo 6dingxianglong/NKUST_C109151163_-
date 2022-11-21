@@ -22,7 +22,7 @@ class _page4State extends State<page4> {
         backgroundColor: const Color(0xff12CBC4),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("asset/bg2.jpeg"),
             fit: BoxFit.cover,
